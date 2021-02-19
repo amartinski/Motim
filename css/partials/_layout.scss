@@ -216,3 +216,21 @@
  
 }
 
+$lg: 580px;
+
+
+#instafeed {
+  max-width:1080px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+    
+    img {
+      display: block;
+      width: 270px;
+      max-width:270px;
+      height: 270px
+      
+    }
+  }
