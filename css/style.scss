@@ -1,0 +1,47 @@
+*, *::after, *::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'mukta', sans-serif;
+}
+
+@mixin responsive () {
+    @media screen and (max-width: 960px){
+        @content;
+    }
+}
+
+@import 'partials/colors';
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: $white-light;
+}
+
+img, svg {
+    display: block;
+    width: 100%;
+}
+a{
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+}
+.border{
+    border: 1px solid red;
+}
+
+p{
+    text-align: center;
+    font-size: 30px;
+    color: $gray-3;
+    letter-spacing: 1px;
+    line-height: 140%
+
+}
+
+@import 'partials/layout';
+@import 'partials/menu';
+@import 'partials/animations';
+@import 'partials/_spacing';
